@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b9e108b-5942-4036-bc5c-b111991e34fd" name="Changes" comment="update workspace configuration and add Qodana analysis setup">
+    <list default="true" id="0b9e108b-5942-4036-bc5c-b111991e34fd" name="Changes" comment="update workspace configuration and implement Hamiltonian matrix calculations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -68,6 +68,36 @@
       <ReportDescription localRun="true" path="/private/var/folders/01/jpv949g10xv79_dcy4_t713r0000gn/T/qodana_output1/qodana.sarif.json" reportGuid="5e864733-6ba3-4362-9df2-30a55f55d487" reportId="EntanglementEntropy/qodana/2025-01-28" />
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EntanglementEntropy" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -86,7 +116,13 @@
       <updated>1738111486171</updated>
       <workItem from="1738111487223" duration="5274000" />
       <workItem from="1738173411852" duration="711000" />
-      <workItem from="1738175428316" duration="8442000" />
+      <workItem from="1738175428316" duration="12095000" />
+      <workItem from="1738256107888" duration="6867000" />
+      <workItem from="1738272998721" duration="6710000" />
+      <workItem from="1738288534638" duration="2434000" />
+      <workItem from="1738332931630" duration="66000" />
+      <workItem from="1738333015832" duration="132000" />
+      <workItem from="1738333160863" duration="272000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project structure and configuration files for EntanglementEntropy">
       <option name="closed" value="true" />
@@ -104,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738127581850</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update workspace configuration and implement Hamiltonian matrix calculations">
+      <option name="closed" value="true" />
+      <created>1738197709551</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738197709551</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,9 +157,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize project structure and configuration files for EntanglementEntropy" />
     <MESSAGE value="update workspace configuration and add Qodana analysis setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="update workspace configuration and add Qodana analysis setup" />
+    <MESSAGE value="update workspace configuration and implement Hamiltonian matrix calculations" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace configuration and implement Hamiltonian matrix calculations" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EntanglementEntropy$main.coverage" NAME="main Coverage Results" MODIFIED="1738197401865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EntanglementEntropy$main.coverage" NAME="main Coverage Results" MODIFIED="1738332940158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
