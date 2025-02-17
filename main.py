@@ -49,9 +49,10 @@ def compute_region_entanglement_entropy(r_eigenvalues):
     return entropy
 
 if __name__ == '__main__':
-    hamiltonian_size = size = int(Prompt.ask("Enter the size of the Hamiltonian matrix", default="8"))
+    hamiltonian_size = size = int(Prompt.ask("Enter the size of the Hamiltonian matrix", default="32"))
     has_periodic_boundary = Prompt.ask("Do you want to use periodic boundary conditions?", choices=["yes", "no"], default="yes") == "yes"
     is_normalized = Prompt.ask("Do you want to normalize the Hamiltonian matrix?", choices=["yes", "no"], default="yes") == "yes"
+    save_figure = Prompt.ask("Do you want to save the figure as a PNG file?", choices=["yes", "no"], default="yes") == "yes"
 
     with Progress() as progress:
         # Create Hamiltonian matrix
@@ -65,7 +66,9 @@ if __name__ == '__main__':
         eigen_results = sorted([(eigenvalues[i], eigenvectors[:, i]) for i in range(len(eigenvalues))], key=lambda x: x[0])
 
         # Only keep the eigen results with negative eigenvalues
-        negative_eigen_results = [eigen_result for eigen_result in eigen_results if eigen_result[0] < 0]
+        negative_eigen_results = [eigen_result for eigen_result in eigen_results if eigen_result[0] <= 0]
+        negative_eigenvalues = [eigen_result[0] for eigen_result in negative_eigen_results]
+        print(sum(negative_eigenvalues))
 
         correlation_size = len(negative_eigen_results)
 
@@ -97,7 +100,8 @@ if __name__ == '__main__':
         axs[0, 1].set_title("Correlation Matrix")
 
         # Plot eigenvalues with their index
-        axs[1, 0].scatter(range(len(eigenvalues)), eigenvalues)
+        axs[1, 0].scatter(range(len(eigenvalues)), eigenvalues, zorder=1)
+        axs[1, 0].axhline(0, color="black", linestyle="--", zorder=0)
         axs[1, 0].set_title("Energy Eigenvalues")
         axs[1, 0].set_xlabel("i")
         axs[1, 0].set_ylabel("E_i")
@@ -110,4 +114,7 @@ if __name__ == '__main__':
 
         # Adjust layout and show the plot
         plt.tight_layout()
-        plt.savefig("entanglement_entropy.png", dpi=2 ** 10)
+        if save_figure:
+            plt.savefig("entanglement_entropy.png", dpi=2 ** 10)
+        else:
+            plt.show()

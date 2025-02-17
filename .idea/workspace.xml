@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b9e108b-5942-4036-bc5c-b111991e34fd" name="Changes" comment="update workspace configuration and implement Hamiltonian matrix calculations" />
+    <list default="true" id="0b9e108b-5942-4036-bc5c-b111991e34fd" name="Changes" comment="update workspace configuration and add new work item for task tracking">
+      <change afterPath="$PROJECT_DIR$/hopping_matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +17,13 @@
   <component name="ChangesViewManager">
     <option name="groupingKeys">
       <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
     </option>
   </component>
   <component name="Git.Settings">
@@ -45,6 +56,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.hopping_matrix.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -65,7 +77,35 @@
       <ReportDescription localRun="true" path="/private/var/folders/01/jpv949g10xv79_dcy4_t713r0000gn/T/qodana_output1/qodana.sarif.json" reportGuid="5e864733-6ba3-4362-9df2-30a55f55d487" reportId="EntanglementEntropy/qodana/2025-01-28" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.hopping_matrix">
+    <configuration name="hopping_matrix" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EntanglementEntropy" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hopping_matrix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="EntanglementEntropy" />
       <option name="ENV_FILES" value="" />
@@ -91,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hopping_matrix" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -121,6 +162,17 @@
       <workItem from="1738333015832" duration="132000" />
       <workItem from="1738333160863" duration="272000" />
       <workItem from="1738333467561" duration="55000" />
+      <workItem from="1738444797999" duration="1553000" />
+      <workItem from="1738528636060" duration="1105000" />
+      <workItem from="1738555493501" duration="147000" />
+      <workItem from="1738691125343" duration="49000" />
+      <workItem from="1738705955955" duration="7384000" />
+      <workItem from="1738804002362" duration="11477000" />
+      <workItem from="1739173995181" duration="56000" />
+      <workItem from="1739231161835" duration="149000" />
+      <workItem from="1739296819246" duration="205000" />
+      <workItem from="1739310064959" duration="20634000" />
+      <workItem from="1739825361684" duration="65000" />
     </task>
     <task id="LOCAL-00001" summary="initialize project structure and configuration files for EntanglementEntropy">
       <option name="closed" value="true" />
@@ -154,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738333515154</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update workspace configuration and add new work item for task tracking">
+      <option name="closed" value="true" />
+      <created>1738445283205</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738445283205</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,9 +224,11 @@
     <MESSAGE value="initialize project structure and configuration files for EntanglementEntropy" />
     <MESSAGE value="update workspace configuration and add Qodana analysis setup" />
     <MESSAGE value="update workspace configuration and implement Hamiltonian matrix calculations" />
-    <option name="LAST_COMMIT_MESSAGE" value="update workspace configuration and implement Hamiltonian matrix calculations" />
+    <MESSAGE value="update workspace configuration and add new work item for task tracking" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace configuration and add new work item for task tracking" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EntanglementEntropy$main.coverage" NAME="main Coverage Results" MODIFIED="1738332940158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EntanglementEntropy$main.coverage" NAME="main Coverage Results" MODIFIED="1739583789733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EntanglementEntropy$hopping_matrix.coverage" NAME="hopping_matrix Coverage Results" MODIFIED="1739584173742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
